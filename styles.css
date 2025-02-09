@@ -97,25 +97,34 @@ h1 {
     h1 {
         font-size: 2.7rem;
         letter-spacing: 0.5rem;
-        text-align: center; /* Alinha o texto ao centro */
+        text-align: center; /* Centraliza o texto */
         display: block;
-        white-space: pre-line; /* Garante que cada palavra fique abaixo da outra */
-        line-height: 1.5; /* Ajusta o espaçamento entre as linhas */
-        font-weight: bold; /* Deixa o texto mais destacado */
+        line-height: 1.5;
+        font-weight: bold;
+        margin: 0 auto; /* Garante que o h1 esteja centralizado */
     }
 
     .resultado p {
         font-size: 1.2rem;
     }
 
+    .escolha {
+        display: flex;
+        justify-content: center; /* Centraliza os itens */
+        align-items: center;
+        gap: 10px; /* Espaço entre as imagens */
+    }
+
     .escolha img {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
 
     .escolha-resultado {
-        flex-direction: row; /* Alinha os resultados lado a lado */
-        justify-content: space-around; /* Distribui o espaço entre os resultados */
+        display: flex; /* Certifica que os resultados fiquem lado a lado */
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
 
     .escolha-resultado img {
@@ -125,8 +134,10 @@ h1 {
 
     #mensagem-resultado-final, #continue-jogando {
         font-size: 1.8rem;
+        text-align: center;
     }
 }
+
 
 @media (min-width: 1200px) {
     .container {
