@@ -12,7 +12,7 @@ body {
 .container {
     text-align: center;
     background: #111;
-    padding: 70px;
+    padding: 80px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     max-width: 90%;
@@ -111,6 +111,11 @@ h1 {
     .escolha img {
         width: 80px;
         height: 80px;
+    }
+
+    .escolha-resultado {
+        flex-direction: row; /* Alinha os resultados lado a lado */
+        justify-content: space-around; /* Distribui o espaço entre os resultados */
     }
 
     .escolha-resultado img {
