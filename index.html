@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel e Tesoura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pedra Papel Tesoura</h1>
+        <div class="resultado">
+            <p id="mensagem-resultado">Faça sua escolha!</p>
+        </div>
+        <div class="escolhas">
+            <div class="escolha" id="pedra">
+                <img src="pedra.png" alt="Pedra">
+            </div>
+            <div class="escolha" id="papel">
+                <img src="papel.png" alt="Papel">
+            </div>
+            <div class="escolha" id="tesoura">
+                <img src="tesoura.png" alt="Tesoura">
+            </div>
+        </div>
+        <div class="escolha-resultado" id="escolha-resultado" style="display: none;">
+            <div>
+                <h2>Sua escolha</h2>
+                <img id="imagem-usuario" src="" alt="">
+            </div>
+            <div>
+                <h2>Escolha do Computador</h2>
+                <img id="imagem-computador" src="" alt="">
+            </div>
+        </div>
+        <div class="mensagem-final" id="mensagem-final" style="display: none;">
+            <p id="mensagem-resultado-final"></p>
+            <p id="continue-jogando">Continue Jogando, aguarde!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

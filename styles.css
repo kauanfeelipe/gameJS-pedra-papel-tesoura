@@ -1,0 +1,152 @@
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #111;
+    padding: 70px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    max-width: 90%;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    text-shadow: 2px 2px #ff0000, -2px -2px #00ff00, -2px 2px #0000ff, 2px -2px #ffff00;
+}
+
+.resultado {
+    margin-bottom: 30px;
+}
+
+.resultado p {
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 0;
+}
+
+.escolhas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.escolha {
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin: 10px;
+}
+
+.escolha:hover {
+    transform: scale(1.2);
+}
+
+.escolha img {
+    width: 120px;
+    height: 120px;
+}
+
+.escolha:active {
+    transform: scale(1.1);
+}
+
+.escolha-resultado {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.escolha-resultado div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.escolha-resultado img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.mensagem-final {
+    margin-top: 20px;
+}
+
+#mensagem-resultado-final, #continue-jogando {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.7rem;
+        letter-spacing: 0.5rem;
+        text-align: center; /* Alinha o texto ao centro */
+        display: block;
+        white-space: pre-line; /* Garante que cada palavra fique abaixo da outra */
+        line-height: 1.5; /* Ajusta o espaçamento entre as linhas */
+        font-weight: bold; /* Deixa o texto mais destacado */
+    }
+
+    .resultado p {
+        font-size: 1.2rem;
+    }
+
+    .escolha img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .escolha-resultado img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #mensagem-resultado-final, #continue-jogando {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 70%;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .resultado p {
+        font-size: 2rem;
+    }
+
+    .escolha img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .escolha-resultado img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #mensagem-resultado-final, #continue-jogando {
+        font-size: 2.5rem;
+    }
+}
