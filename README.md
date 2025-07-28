@@ -54,3 +54,8 @@ cd pedra-papel-tesoura
 
 
 Abra o arquivo index.html no navegador.
+
+
+Link do projeto online.
+
+game-js-pedra-papel-tesoura.vercel.app
