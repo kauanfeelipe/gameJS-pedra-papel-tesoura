@@ -44,7 +44,7 @@ O jogo reinicia automaticamente após 5 segundos.
 Clone o repositório:
 
 
-git clone https://github.com/seu-usuario/pedra-papel-tesoura.git
+git clone https://github.com/kauanfeelipe/gameJS-pedra-papel-tesoura.git
 
 
 Acesse a pasta do projeto:
